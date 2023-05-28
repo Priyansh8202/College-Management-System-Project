@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>library Management</title>
+
+    <style>
+ /* Style buttons */
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 16px 30px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.box
+		{
+          height:20px;
+          width: 180px;
+          background-color: powderblue;
+          border-radius: 200px;
+          font-size: 15px;
+          color: red;
+		}
+		th
+		{
+		text-align:left;
+		font-size: 30px;
+
+		}
+
+
+    </style>
+</head>
+<body style="background-image: url('https://image.shutterstock.com/image-photo/ancient-old-globe-on-vintage-600w-1127366264.jpg');">
+<center><h1 style="font-size:35px; margin-top:0px;">Library Management System</h1></center>
+<hr style="height:2px;border-width:0;color:black;background-color:black;text-align:left;margin-left:5">
+
+    <div style="background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=628&q=80'); height:520px; width:1400px; margin-top:0px; float:left;  " >
+         <center><h2 style="margin-top:0px; color:white; font-size:32px;" >Library Membership Info</h2></center><hr>
+      <form action="libraryM_Data.py" method="get">
+        <table style="height:400px; width: 1300px;">
+            <tr>
+                <th><label>Member Type:<span style="color:red">*</span></label></th>
+                <td><label><input list="Member" placeholder="Select Member Type" name="m" autocomplete="off" required class="box"/></label>
+                <datalist id="Member">
+                <option value="Student">
+                <option value="Librarian">
+                </datalist></h3></td>
+
+                <th><label>Book ID:<span style="color:red">*</span></label></th>
+                <td><input type="text" name="b" placeholder="Book ID Here" autocomplete="off" required class="box"></td>
+            </tr>
+            <tr>
+                <th><label>Stu-Roll No:<span style="color:red">*</span></label></th>
+                <td><input type="text" name="r" placeholder="Student Roll No Here" autocomplete="off" required class="box"></td>
+                <th><label>Book Title:<span style="color:red">*</span></label></th>
+                <td><input type="text" name="bt" placeholder="Book Tittle Here" autocomplete="off" required class="box"></td>
+            </tr>
+            <tr>
+                <th><label>First Name:<span style="color:red">*</span></label></th>
+                <td><input type="text" name="f" placeholder="Enter First Name" autocomplete="off" required class="box"></td>
+
+                <th><label>Author:<span style="color:red">*</span></label></th>
+                <td><input type="text" name="au" placeholder="Author Name Here" autocomplete="off" required class="box"></td>
+            </tr>
+            <tr>
+                <th><label>Last Name:<span style="color:red">*</span></label></th>
+                <td><input type="text" name="l" placeholder="Enter Last Name" autocomplete="off" required class="box"></td>
+
+                <th><label>Date Borrowed:<span style="color:red">*</span></label></th>
+                <td><input type="date" name="db" placeholder="Date Borrowed Here" autocomplete="off" required class="box"></td>
+            </tr>
+            <tr>
+                <th><label>Email:<span style="color:red">*</span></label></th>
+                <td><input type="text" name="ad" placeholder="Enter Your Address Here" autocomplete="off" required class="box"></td>
+
+                <th><label>Date Due:<span style="color:red">*</span></label></th>
+                <td><input type="date" name="dd" placeholder="Date Due Here" autocomplete="off" required class="box"></td>
+            </tr>
+            <tr>
+                <th><label>Post Code:<span style="color:red">*</span></label></th>
+                <td><input type="text" name="pc" placeholder="Enter Post ode Here"  autocomplete="off" required class="box"></td>
+
+                <th><label>Days In Loan:<span style="color:red">*</span></label></th>
+                <td><input type="text" name="dl" placeholder="Days In Loan Here" autocomplete="off" required class="box"></td>
+            </tr>
+            <tr>
+                <th><label>Mobile No:<span style="color:red">*</span></label></th>
+                <td><input type="text" name="mn" placeholder="Enter Your Mobile No." autocomplete="off" required class="box"></td>
+
+
+                <th><label>Select Any Book:<span style="color:red">*</span></label></th>
+          <td><label><input list="book" placeholder="Select Any Book " name="bkn" autocomplete="off" required class="box"/></label>
+                <datalist id="book">
+                <option value="C">
+                <option value="C++">
+                <option value="Java">
+                <option value="Python">
+                <option value="PHP">
+                 <option value="Java Script ">
+                  <option value="My SQL ">
+                   <option value="Data Structure">
+                    <option value="Operating System">
+                    <option value="Computer Organisation ">
+                    <option value="HTML">
+                    <option value="Android ">
+                    <option value="Web Development">
+                    <option value="Oracle ">
+                    <option value="Advance Java ">
+                    <option value="AI">
+                    <option value="Cloud Database">
+                </datalist></h3>
+          </td>
+            </tr>
+
+        </table>
+          <input type="submit" value="Issue"  style="margin-left: 300px; margin-top:20px; height:25px; width:100px; background-color:darkblue; color:white;">
+             <input type="reset"   style="margin-left: 300px; margin-top:20px; height:25px; width:100px; background-color:darkblue; color:white;">
+          <a href="Homepage.html"><input type="button" value="Log Out" style="margin-left: 300px; margin-top:20px; height:25px; width:100px; background-color:darkblue; color:white;"></a>
+      </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

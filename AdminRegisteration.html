@@ -1,0 +1,102 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>
+  
+body
+{  
+  font-family: Calibri; 
+  background-color: white;  
+} 
+ 
+.con
+{  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: white;  
+} 
+ 
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: lightgreen;  
+  outline: none;  
+} 
+ 
+ div
+{  
+            padding: 10px 0;  
+ }  
+
+hr
+{  
+  border: 1px solid white;  
+  margin-bottom: 25px;  
+}  
+
+.registerbtn 
+{  
+  background-color: green;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;    
+  width: 100%;  
+  opacity: 0.7;  
+}  
+
+.registerbtn:hover
+{  
+  opacity: 1;  
+}  
+
+
+</style> 
+</head>  
+
+<body>  
+<form action="adminregis.py" method="">
+  <div class="con">  
+  <center>  <h1> Admin Registeration Form</h1> </center>
+  <hr>  
+ <label><b> Firstname</b> </label>   
+<input type="text" name="fn" placeholder= "Firstname">
+<label><b> Lastname: </b></label>    
+<input type="text" name="ln" placeholder="Lastname">
+
+
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender"> Male   
+<input type="radio" value="Female" name="gender"> Female
+</div>  
+
+<label><b> 
+Phone :  
+</b></label>  
+<input type="text" name="cc" placeholder="Country Code"  value="+91">
+<input type="text" name="p" placeholder="phone no.">
+
+<label><b>Current Address :</b></label>  
+<textarea placeholder="Current Address" value="address" name="ad">
+
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email">  
+  
+    <label><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw">  
+
+    <button type="submit" class="registerbtn">Register</button>
+      <a href="index.html"><button type="button" class="registerbtn">Back</button></a>
+</form>  
+</body>  
+</html> 

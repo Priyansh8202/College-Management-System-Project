@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information</title>
+    <style>
+
+        .box
+		{
+          height:20px;
+          width: 500px;
+          background-color: lightgray;
+          border-radius: 200px;
+          font-size: 15px;
+          color: red;
+		}
+		th
+		{
+		font-size: 20px;
+		}
+		td
+		{
+		margin-left;50px;
+		}
+
+
+
+    </style>
+</head>
+<body style="background-color:powderblue;">
+<center><h1 style="font-size:35px; margin-top:0px;">Student Registration form</h1></center>
+<hr style="height:2px;border-width:0;color:black;background-color:black;text-align:left;margin-left:5">
+<div style="background-image: url('https://zestechinc.com/wp-content/uploads/2017/02/registration.jpg'); height:780px; width:700px; float:left; background-size: 100% 100%;">
+
+</div>
+<div style="background-color:white; height:790px; width:600px; float:right">
+    <form action="stuinfo.py" method="get" >
+        <table style="height:240px; width: 650px;" >
+            <tr>
+                <th><label>Student Roll No:<span style="color:red">*</span></label></th>
+
+             </tr>
+            <tr>
+            <th><input placeholder="Enter Student Roll No" name="stu" autocomplete="off" required class="box"/></th>
+            </tr>
+
+
+             <tr>
+                <th><label>Candidate Name:<span style="color:red">*</span></label></th>
+
+             </tr>
+            <tr>
+            <th><input placeholder="Enter ur Name" name="n" autocomplete="off" required class="box"/></th>
+            </tr>
+            <tr>
+                <th><label>Father Name:<span style="color:red">*</span></label></th>
+
+            </tr>
+            <tr>
+                 <th><input type="text" name="fn" placeholder="Father Name" autocomplete="off" required class="box"></th>
+            </tr>
+            <tr>
+                <th><label>Mother Name:<span style="color:red">*</span></label></th>
+
+            </tr>
+            <tr>
+                <th><input type="text" name="m" placeholder="Mother Name" autocomplete="off" required class="box"></th>
+            </tr>
+            <tr>
+                <th><label>Date Of Birth:<span style="color:red">*</span></label></th>
+
+            </tr>
+            <tr>
+                <th><input type="date" name="db" placeholder="DOB" autocomplete="off" required class="box"></th>
+            </tr>
+            <tr>
+                <th><label>Address:<span style="color:red">*</span></label></th>
+
+            </tr>
+            <tr>
+                <th><input type="text" name="ad" placeholder="Enter ur Address" autocomplete="off" required class="box"></th>
+            </tr>
+             <tr>
+                <th><label>City:<span style="color:red">*</span></label></th>
+
+            </tr>
+            <tr>
+                <th><input type="text" name="cy" placeholder="Enter ur City" autocomplete="off" required class="box"></th>
+            </tr>
+            <tr>
+                <th><label>Mobile:<span style="color:red">*</span></label></th>
+
+            </tr>
+            <tr>
+                <th><input type="text" name="mn" placeholder="Enter ur Mobile No" autocomplete="off" required class="box"></th>
+            </tr>
+            <tr>
+                <th><label>E-Mail:<span style="color:red">*</span></label></th>
+
+            </tr>
+            <tr>
+                <th><input type="text" name="em" placeholder="Enter ur Email" autocomplete="off" required class="box"></th>
+            </tr>
+            <tr>
+                 <th><label>Course:<span style="color:red">*</span></label></th>
+
+            </tr>
+            <tr>
+                <th><label><input list="course" placeholder="Select Any UG Course" name="cu" autocomplete="off" required class="box"/></label>
+                <datalist id="course">
+                <option value="BCA">
+                <option value="BCA-CLOUD">
+                    <option value="BBA">
+                    <option value="B.Tech">
+                    <option value="MCA">
+                    <option value="M.Tech">
+                </datalist></h3></th>
+            </tr>
+            <tr>
+                 <th><label>Department:<span style="color:red">*</span></label></th>
+
+            </tr>
+            <tr>
+                <th><label><input list="depart" placeholder="Select Any Department" name="dp" autocomplete="off" required class="box"/></label>
+                <datalist id="depart">
+                <option value="Computer Applications">
+                <option value="Civil Engineering">
+                    <option value="Mechanical Engineering">
+                    <option value="Electrical Engineering">
+                    <option value="Artificial Engineering">
+                    <option value="Cloud Computing">
+                    <option value="Computer Science and Engineering">
+                </datalist></h3></th>
+            </tr>
+            <tr>
+                 <th><label>Gender:<span style="color:red">*</span></label></th>
+
+            </tr>
+            <tr>
+                 <th><label><input list="gen" placeholder="Select Gender" name="gen" autocomplete="off" required class="box"/></label>
+                <datalist id="gen">
+                <option value="Male">
+                <option value="female">
+                </datalist></h3></th>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Register"  style="margin-left: 75px; margin-top:20px; height:30px; width:500px; background-color:darkblue; color:white;"></td>
+            </tr>
+            <tr>
+                <td><a href="studentprofile.html"><input type="button" value="Back"  style="margin-left: 75px; margin-top:20px; height:30px; width:500px; background-color:darkblue; color:white;"></a></td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</div>
+
+</body>
+</html>
